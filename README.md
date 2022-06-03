@@ -6,7 +6,7 @@ Get your computers specs
 ```
 $pip install bs4
 $pip install psutil
-$pip install cpuinfo
+$pip install py-cpuinfo
 $pip install GPUtil
 $pip install platform
 ```
@@ -14,7 +14,7 @@ $pip install platform
 ```
 >pip install bs4
 >pip install psutil
->pip install cpuinfo
+>pip install py-cpuinfo
 >pip install GPUtil
 >pip install platform
 ```
