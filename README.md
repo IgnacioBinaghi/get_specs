@@ -1,5 +1,7 @@
 # get_specs
-Get your computers specs
+Get Your Computer's Specs 
+
+`Only Functions With NVIDIA Graphics Cards`
 
 # Installation
 ### Linux
