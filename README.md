@@ -20,3 +20,16 @@ $pip install platform
 ```
 
 ### Simply run the program and it will output your specs
+
+Within your shell, navigate towards the directory where the files were downloaded by using the 'cd' command
+
+For Example:
+```
+cd desktop
+cd get_specs-main
+```
+Then, use the python command to open the main program
+
+```
+python main.py
+```
