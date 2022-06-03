@@ -50,6 +50,11 @@ hardware = {
     "CPU Frequency" : CPU_frequency,
     "RAM Memory" : Memory,
     "Free Storage" : free_storage,
-    "GPU" : GPU,
-    "GPU Storage in MB" : GPU_storage
     }
+
+try:
+    hardware.update({"GPU" : GPU})
+    hardware.update({"GPU Storage in MB" : GPU_storage})
+except:
+    hardware.update({"GPU" : "GPU Not Detected"})
+    hardware.update({"GPU Storage in MB" : "GPU Not Detected"})
