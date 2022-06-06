@@ -41,20 +41,53 @@ for i in gpu_info:
 
 # Entering All information into a dictionary
 
-hardware = {
-    "System" : system_type,
-    "Version" : system_version,
-    "Processor" : system_processor,
-    "Machine" : system_machine,
-    "Cores" : CPU_cores,
-    "CPU Frequency" : CPU_frequency,
-    "RAM Memory" : Memory,
-    "Free Storage" : free_storage,
-    }
+hardware = {}
 
 try:
-    hardware.update({"GPU" : GPU})
+    hardware.update({"System" : system_type})
+except:
+    hardware.update({"System": "System Type Not Detected"})
+try:
+    hardware.update({"Version" : system_version})
+except:
+    hardware.update({"Version" : "System Version Not Detected"})
+try:
+    hardware.update({"Processor" : system_processor})
+except:
+    hardware.update({"Processor": "Processor Not Detected"})
+try:
+    hardware.update({"Machine" : system_machine})
+except:
+    hardware.update({"Machine" : "Machine Type Not Detected"})
+try:
+    hardware.update({"Cores" : CPU_cores})
+except:
+    hardware.update({"Cores": "Cores Not Detected"})
+try:
+    hardware.update({"CPU Frequency" : CPU_frequency})
+except:
+    hardware.update({"CPU Frequency" : "CPU Frequency Not Detected"})
+try:
+    hardware.update({"RAM Memory" : Memory})
+except:
+    hardware.update({"RAM Memory": "RAM Memory Not Detected"})
+try:
+    hardware.update({"Free Storage" : free_storage})
+except:
+    hardware.update({"Free Storage" : "Free Storage Not Detected"})
+try:
+    hardware.update({"GPU": GPU})
+except:
+    hardware.update({"GPU": "GPU Not Detected"})
+try:
     hardware.update({"GPU Storage in MB" : GPU_storage})
 except:
-    hardware.update({"GPU" : "GPU Not Detected"})
+    hardware.update({"GPU Storage in MB" : "GPU Not Detected"})
+try:
+    hardware.update({"GPU": GPU})
+except:
+    hardware.update({"GPU": "GPU Not Detected"})
+try:
+    hardware.update({"GPU Storage in MB" : GPU_storage})
+except:
     hardware.update({"GPU Storage in MB" : "GPU Not Detected"})
